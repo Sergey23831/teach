@@ -223,22 +223,43 @@ def obr():
 # numbers_wells_sum_car = Car.weels_number*4
 # print(numbers_wells_sum_car)
 
-class Techers:
+# class Techers:
+#
+#     Class_number = ('E')
+#
+#     def __init__(self, name, lastname, number):
+#         self.name = name
+#         self.lastname = lastname
+#         self.number = number
+#
+#
+# Ivan_Sidorov = Techers(lastname='Sidorov', name='Ivan', number='№1')
+# Katya_Ivanova = Techers(lastname='Ivanova', name='Katya', number='№2')
+# Vova_Petrov = Techers(lastname='Petrov', name='Vova', number='№3')
+# number_class = Techers.Class_number+' '+'class'
+#
+# print(number_class)
+# print(Ivan_Sidorov.number+' '+Ivan_Sidorov.lastname+' '+Ivan_Sidorov.name)
+# print(Katya_Ivanova.number+' '+Katya_Ivanova.lastname+' '+Katya_Ivanova.name)
+# print(Vova_Petrov.number+' '+Vova_Petrov.lastname+' '+Vova_Petrov.name)
 
-    Class_number = ('E')
+# METODS CLASS
 
-    def __init__(self, name, lastname, number):
+class Car:
+
+    weels_number = 4
+
+    def __init__(self, name, series, is_crashed):
         self.name = name
-        self.lastname = lastname
-        self.number = number
+        self.series = series
+        self.is_crashed = is_crashed
 
 
-Ivan_Sidorov = Techers(lastname='Sidorov', name='Ivan', number='№1')
-Katya_Ivanova = Techers(lastname='Ivanova', name='Katya', number='№2')
-Vova_Petrov = Techers(lastname='Petrov', name='Vova', number='№3')
-number_class = Techers.Class_number+' '+'class'
+    def drive(self, city):
+        print(self.name+' is driving to '+city)
 
-print(number_class)
-print(Ivan_Sidorov.number+' '+Ivan_Sidorov.lastname+' '+Ivan_Sidorov.name)
-print(Katya_Ivanova.number+' '+Katya_Ivanova.lastname+' '+Katya_Ivanova.name)
-print(Vova_Petrov.number+' '+Vova_Petrov.lastname+' '+Vova_Petrov.name)
+
+opel_car = Car('Opel', 'Tigra', True)
+opel_car.drive('Volhov')
+bmw_car = Car('BMW', 'X5', False)
+bmw_car.drive('SPB')
