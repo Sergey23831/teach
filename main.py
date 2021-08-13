@@ -189,7 +189,7 @@ def obr():
 #         return True
 #     else:
 #         return False
-# print(is_hello_in_text('Say hello everyone.'))
+print(is_hello_in_text('Say hello everyone.'))
 
 # def is_hello_in_text(text):
 #     if 'hello' in text:
@@ -197,5 +197,4 @@ def obr():
 #     else:
 #         return False
 # print(is_hello_in_text('Say hello everyone.'))
-
 
