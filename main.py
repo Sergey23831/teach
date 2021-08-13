@@ -200,25 +200,45 @@ def obr():
 
 # CLASS.
 
-class Car:
+# class Car:
+#
+#     weels_number = 4
+#
+#     def __init__(self, name, series, is_crashed):
+#         self.name = name
+#         self.series = series
+#         self.is_crashed = is_crashed
+#
+#
+# Mazda_Car = Car(name='Mazda', series='CX7', is_crashed=True)
+# BMW_Car = Car(name='BMW', series='X5', is_crashed=False)
+# Audi_Car = Car(name='Audi', series='A8', is_crashed=True)
+# Mersedes_Car = Car(name='Mersedes', series='E class', is_crashed=False)
+#
+# print(Mazda_Car.name + ' ' + Mazda_Car.series + ' ' + str(Mazda_Car.weels_number) + ' ' + str(Mazda_Car.is_crashed))
+# print(BMW_Car.name + ' ' + BMW_Car.series + ' ' + str(BMW_Car.weels_number) + ' ' + str(BMW_Car.is_crashed))
+# print(Audi_Car.name + ' ' + Audi_Car.series + ' ' + str(Audi_Car.weels_number) + ' ' + str(Audi_Car.is_crashed))
+# print(Mersedes_Car.name + ' ' + Mersedes_Car.series + ' ' + str(Mersedes_Car.weels_number) + ' ' + str(Mersedes_Car.is_crashed))
+#
+# numbers_wells_sum_car = Car.weels_number*4
+# print(numbers_wells_sum_car)
 
-    weels_number = 4
+class Techers:
 
-    def __init__(self, name, series, is_crashed):
+    Class_number = ('E')
+
+    def __init__(self, name, lastname, number):
         self.name = name
-        self.series = series
-        self.is_crashed = is_crashed
+        self.lastname = lastname
+        self.number = number
 
 
-Mazda_Car = Car(name='Mazda', series='CX7', is_crashed=True)
-BMW_Car = Car(name='BMW', series='X5', is_crashed=False)
-Audi_Car = Car(name='Audi', series='A8', is_crashed=True)
-Mersedes_Car = Car(name='Mersedes', series='E class', is_crashed=False)
+Ivan_Sidorov = Techers(lastname='Sidorov', name='Ivan', number='№1')
+Katya_Ivanova = Techers(lastname='Ivanova', name='Katya', number='№2')
+Vova_Petrov = Techers(lastname='Petrov', name='Vova', number='№3')
+number_class = Techers.Class_number+' '+'class'
 
-print(Mazda_Car.name + ' ' + Mazda_Car.series + ' ' + str(Mazda_Car.weels_number) + ' ' + str(Mazda_Car.is_crashed))
-print(BMW_Car.name + ' ' + BMW_Car.series + ' ' + str(BMW_Car.weels_number) + ' ' + str(BMW_Car.is_crashed))
-print(Audi_Car.name + ' ' + Audi_Car.series + ' ' + str(Audi_Car.weels_number) + ' ' + str(Audi_Car.is_crashed))
-print(Mersedes_Car.name + ' ' + Mersedes_Car.series + ' ' + str(Mersedes_Car.weels_number) + ' ' + str(Mersedes_Car.is_crashed))
-
-numbers_wells_sum_car = Car.weels_number*4
-print(numbers_wells_sum_car)
+print(number_class)
+print(Ivan_Sidorov.number+' '+Ivan_Sidorov.lastname+' '+Ivan_Sidorov.name)
+print(Katya_Ivanova.number+' '+Katya_Ivanova.lastname+' '+Katya_Ivanova.name)
+print(Vova_Petrov.number+' '+Vova_Petrov.lastname+' '+Vova_Petrov.name)
