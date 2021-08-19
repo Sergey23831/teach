@@ -1,51 +1,51 @@
 from datetime import datetime
 import functions as f
-import os
-
-APP_DIR = os.path.dirname(os.path.realpath(__file__))
-
-# print(f.get_current_timedate())
-# print(f.write_file(name="test", data=time))
-
-
-def xy():
-    Primer = ("Пример-(x*y)/(g+z)")
-    print(Primer)
-    x = int(input("Чему равен x"))
-    y = int(input("Чему равен y"))
-    g = int(input("Чему равен g"))
-    z = int(input("Чему равен z"))
-    c = ("Ответ")
-    d = ((x*y)/(g+z))
-    string =c+" "+str(d)
-    print(string)
-def go():
-    print("пиздуй в школу!")
-
-def obr():
-    Obraz = ("Образец:")
-    print(Obraz)
-    Zadacha = ("Дано уравнение (у/x)*(z/g), y-42, z-81, g-9. Найти х если ответ равен 54.")
-    print(Zadacha)
-    reshenie = ("Решение:")
-    print(reshenie)
-    primer_1 = ("Подставляем в пример значения y, z, g и получаем:")
-    print(primer_1)
-    primer_1_1 = ("(42/x)*(81/9)=54")
-    print(primer_1_1)
-    pri = (input("(81/9)="))
-    if pri =="9":
-        pr = (input("54/9="))
-        if pr =="6":
-            p = (input("42/6="))
-            if p=="7":
-                print("Молодец!")
-            else:
-                go()
-        else:
-            go()
-    else:
-        go()
+# import os
+#
+# APP_DIR = os.path.dirname(os.path.realpath(__file__))
+#
+# # print(f.get_current_timedate())
+# # print(f.write_file(name="test", data=time))
+#
+#
+# def xy():
+#     Primer = ("Пример-(x*y)/(g+z)")
+#     print(Primer)
+#     x = int(input("Чему равен x"))
+#     y = int(input("Чему равен y"))
+#     g = int(input("Чему равен g"))
+#     z = int(input("Чему равен z"))
+#     c = ("Ответ")
+#     d = ((x*y)/(g+z))
+#     string =c+" "+str(d)
+#     print(string)
+# def go():
+#     print("пиздуй в школу!")
+#
+# def obr():
+#     Obraz = ("Образец:")
+#     print(Obraz)
+#     Zadacha = ("Дано уравнение (у/x)*(z/g), y-42, z-81, g-9. Найти х если ответ равен 54.")
+#     print(Zadacha)
+#     reshenie = ("Решение:")
+#     print(reshenie)
+#     primer_1 = ("Подставляем в пример значения y, z, g и получаем:")
+#     print(primer_1)
+#     primer_1_1 = ("(42/x)*(81/9)=54")
+#     print(primer_1_1)
+#     pri = (input("(81/9)="))
+#     if pri =="9":
+#         pr = (input("54/9="))
+#         if pr =="6":
+#             p = (input("42/6="))
+#             if p=="7":
+#                 print("Молодец!")
+#             else:
+#                 go()
+#         else:
+#             go()
+#     else:
+#         go()
 
 
 
@@ -219,7 +219,7 @@ def obr():
 # print(BMW_Car.name + ' ' + BMW_Car.series + ' ' + str(BMW_Car.weels_number) + ' ' + str(BMW_Car.is_crashed))
 # print(Audi_Car.name + ' ' + Audi_Car.series + ' ' + str(Audi_Car.weels_number) + ' ' + str(Audi_Car.is_crashed))
 # print(Mersedes_Car.name + ' ' + Mersedes_Car.series + ' ' + str(Mersedes_Car.weels_number) + ' ' + str(Mersedes_Car.is_crashed))
-#
+
 # numbers_wells_sum_car = Car.weels_number*4
 # print(numbers_wells_sum_car)
 
@@ -245,21 +245,50 @@ def obr():
 
 # METODS CLASS
 
-class Car:
+# class Car:
+#
+#     weels_number = 4
+#
+#     def __init__(self, name, series, is_crashed):
+#         self.name = name
+#         self.series = series
+#         self.is_crashed = is_crashed
+#
+#
+#     def drive(self, city):
+#         print(self.name+' is driving to '+city)
+#
+#
+# opel_car = Car('Opel', 'Tigra', True)
+# opel_car.drive('Volhov')
+# bmw_car = Car('BMW', 'X5', False)
+# bmw_car.drive('SPB')
 
-    weels_number = 4
+# MODULS
 
-    def __init__(self, name, series, is_crashed):
-        self.name = name
-        self.series = series
-        self.is_crashed = is_crashed
+# import random
+# x = random.randint(1, 10)
+# print(x)
+#
+# from random import randint
+# x = randint(1, 10)
+# print(x)
+#
+# from random import shuffle
+# my_list = [1,2,3]
+# shuffle(my_list)
+# print(my_list)
+#
+# from random import shuffle as shuffle_my_list
+# my_list = [1,2,3]
+# shuffle_my_list(my_list)
+# print(my_list)
+#
+# import strings
+# strings.say_hello()
+# strings.say_hi()
+# strings.say_Hey_there()
 
 
-    def drive(self, city):
-        print(self.name+' is driving to '+city)
 
 
-opel_car = Car('Opel', 'Tigra', True)
-opel_car.drive('Volhov')
-bmw_car = Car('BMW', 'X5', False)
-bmw_car.drive('SPB')
