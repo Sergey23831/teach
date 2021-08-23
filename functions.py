@@ -4,7 +4,7 @@ from datetime import datetime
 APP_DIR = os.path.dirname(os.path.realpath(__file__))       # НАЗНАЧАЕМ ПАПКУ ПО УМОЛЧАНИЮ
 
 ###########################
-#   ФУНКЦИЯ ЗАПИСИ В ФАЙЛ #
+#  ФУНКЦИЯ ЗАПИСИ В ФАЙЛ  #
 ###########################
 def write_file(name, data):
     try:
